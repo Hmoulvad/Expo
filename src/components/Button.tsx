@@ -1,12 +1,16 @@
 import { useTheme } from "@react-navigation/native";
 import React, { ReactNode } from "react";
-import { StyleSheet, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  TouchableOpacity,
+  TouchableOpacityProps,
+} from "react-native";
 import { AppSpacing } from "../constants/tokens";
 import { Text } from "./Text";
 
-type Props = { children: ReactNode; onPress?: () => void };
+type Props = { children: ReactNode } & TouchableOpacityProps;
 
-export const Button = ({ children, onPress }: Props) => {
+export const Button = ({ children, ...rest }: Props) => {
   const theme = useTheme();
 
   const Styles = StyleSheet.create({
@@ -22,7 +26,7 @@ export const Button = ({ children, onPress }: Props) => {
   });
 
   return (
-    <TouchableOpacity onPress={onPress} style={Styles.Button}>
+    <TouchableOpacity style={[Styles.Button, rest.style]} {...rest}>
       <Text>{children}</Text>
     </TouchableOpacity>
   );

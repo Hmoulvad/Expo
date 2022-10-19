@@ -1,13 +1,15 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, ViewProps } from "react-native";
 import { AppSpacing } from "../constants/tokens";
 
 type Props = {
   vertical?: boolean;
-};
+} & ViewProps;
 
-export const Spacing = ({ vertical = false }: Props) => {
-  return <View style={[vertical ? Styles.Vertical : Styles.Horizontal]} />;
+export const Spacing = ({ vertical = false, ...rest }: Props) => {
+  return (
+    <View style={[vertical ? Styles.Vertical : Styles.Horizontal]} {...rest} />
+  );
 };
 
 const Styles = StyleSheet.create({
