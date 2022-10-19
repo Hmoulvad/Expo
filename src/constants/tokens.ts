@@ -25,4 +25,16 @@ export const AppSpacing = {
   get 6() {
     return 6 * 4;
   },
+  get 7() {
+    return 7 * 4;
+  },
+  get 8() {
+    return 8 * 4;
+  },
+  get 9() {
+    return 9 * 4;
+  },
+  get 10() {
+    return 10 * 4;
+  },
 };
