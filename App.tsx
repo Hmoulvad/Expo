@@ -1,17 +1,7 @@
-import "react-native-gesture-handler";
 import React from "react";
-import {
-  RotationGestureHandler,
-  TapGestureHandler,
-} from "react-native-gesture-handler";
+import "react-native-gesture-handler";
 import { Navigation } from "./src/navigation";
 
 export default function App() {
-  return (
-    <TapGestureHandler>
-      <RotationGestureHandler>
-        <Navigation />
-      </RotationGestureHandler>
-    </TapGestureHandler>
-  );
+  return <Navigation />;
 }

@@ -4,4 +4,4 @@ export { LazyLoadImageScreen } from "./LazyLoadImage";
 export { AnimatedHeaderScreen } from "./AnimatedHeader";
 
 /* Models */
-export { AppScreens } from "./Model";
+export { Routes } from "./Model";
