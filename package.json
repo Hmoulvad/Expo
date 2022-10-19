@@ -19,6 +19,7 @@
     "@babel/core": "^7.18.6",
     "@types/react": "~18.0.0",
     "@types/react-native": "~0.69.1",
+    "eslint-config-react-native-wcandillon": "^3.9.0",
     "typescript": "^4.6.3"
   },
   "scripts": {

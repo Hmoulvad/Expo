@@ -1,3 +1,4 @@
+import type { Theme } from "@react-navigation/native";
 import {
   Color1,
   Color2,
@@ -6,7 +7,6 @@ import {
   Color5,
   Color6,
 } from "../constants/tokens";
-import { Theme } from "./Model";
 
 export const DefaultTheme: Theme = {
   dark: false,

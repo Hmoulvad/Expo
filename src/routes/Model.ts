@@ -7,7 +7,7 @@ export enum Routes {
 
 /* RootStack Type */
 export type RootStackParamsList = {
-  [Routes.Home];
-  [Routes.LazyLoadImage];
-  [Routes.AnimatedHeader];
+  [Routes.Home]: undefined;
+  [Routes.LazyLoadImage]: undefined;
+  [Routes.AnimatedHeader]: undefined;
 };

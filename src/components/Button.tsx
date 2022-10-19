@@ -1,7 +1,7 @@
 import { useTheme } from "@react-navigation/native";
 import React, { ReactNode } from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import { AppSpacing, Color3 } from "../constants/tokens";
+import { AppSpacing } from "../constants/tokens";
 import { Text } from "./Text";
 
 type Props = { children: ReactNode; onPress?: () => void };
