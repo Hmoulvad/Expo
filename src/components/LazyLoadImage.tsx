@@ -9,7 +9,7 @@ import Animated, {
 const ImageWidth = Dimensions.get("screen").width;
 const ImageHeight = 400;
 
-export const SmartImage = () => {
+export const LazyLoadImage = () => {
   const opacity = useSharedValue(0);
 
   const imageFadeInStyle = useAnimatedStyle(() => ({

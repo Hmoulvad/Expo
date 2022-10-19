@@ -1,10 +1,6 @@
-import { ScreenLayout } from "./components/ScreenLayout";
-import { SmartImage } from "./components/SmartImage";
+import React from "react";
+import { Navigation } from "./src/navigation";
 
 export default function App() {
-  return (
-    <ScreenLayout>
-      <SmartImage />
-    </ScreenLayout>
-  );
+  return <Navigation />;
 }
