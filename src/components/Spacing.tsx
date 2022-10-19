@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, ViewProps } from "react-native";
-import { AppSpacing } from "../constants/tokens";
+import { AppSpacing } from "../constants/Tokens";
 
 type Props = {
   vertical?: boolean;

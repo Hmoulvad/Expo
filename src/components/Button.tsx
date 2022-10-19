@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   TouchableOpacityProps,
 } from "react-native";
-import { AppSpacing } from "../constants/tokens";
+import { AppSpacing } from "../constants/Tokens";
 import { Text } from "./Text";
 
 type Props = { children: ReactNode } & TouchableOpacityProps;

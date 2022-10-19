@@ -6,7 +6,7 @@ import {
   Color4,
   Color5,
   Color6,
-} from "../constants/tokens";
+} from "../constants/Tokens";
 
 export const DefaultTheme: Theme = {
   dark: false,

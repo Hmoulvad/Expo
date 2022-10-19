@@ -1,12 +1,10 @@
 import { useTheme } from "@react-navigation/native";
-import React, { ReactNode } from "react";
-import { StyleSheet, Text as RNText } from "react-native";
+import React from "react";
+import { StyleSheet, Text as RNText, TextProps } from "react-native";
 
-type Props = {
-  children: ReactNode;
-};
+type Props = {} & TextProps;
 
-export const Text = ({ children }: Props) => {
+export const Text = ({ children, ...rest }: Props) => {
   const theme = useTheme();
 
   const Styles = StyleSheet.create({
@@ -15,5 +13,9 @@ export const Text = ({ children }: Props) => {
     },
   });
 
-  return <RNText style={[Styles.Text]}>{children}</RNText>;
+  return (
+    <RNText style={[Styles.Text, rest.style]} {...rest}>
+      {children}
+    </RNText>
+  );
 };
