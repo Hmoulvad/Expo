@@ -38,3 +38,22 @@ export const AppSpacing = {
     return 10 * 4;
   },
 };
+
+export const FontSizes = {
+  base: 4,
+  get 100() {
+    return 3 * 4;
+  },
+  get 200() {
+    return 4 * 4;
+  },
+  get 300() {
+    return 4 * 5;
+  },
+  get 400() {
+    return 4 * 6;
+  },
+  get 500() {
+    return 4 * 7;
+  },
+};
