@@ -7,7 +7,7 @@ import Animated, {
 } from "react-native-reanimated";
 
 const ImageWidth = Dimensions.get("screen").width;
-const ImageHeight = 400;
+const ImageHeight = Dimensions.get("screen").height;
 
 export const LazyLoadImage = () => {
   const opacity = useSharedValue(0);

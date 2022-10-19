@@ -1,4 +1,4 @@
 import React from "react";
-import { LazyLoadImage } from "../components/LazyLoadImage";
+import { LazyLoadImage as LLIComponent } from "../components/LazyLoadImage";
 
-export const LazyLoadImageScreen = () => <LazyLoadImage />;
+export const LazyLoadImage = () => <LLIComponent />;

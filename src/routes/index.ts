@@ -1,7 +1,7 @@
 /* Screens */
-export { HomeScreen } from "./Home";
-export { LazyLoadImageScreen } from "./LazyLoadImage";
-export { AnimatedHeaderScreen } from "./AnimatedHeader";
+export { Home } from "./Home";
+export { LazyLoadImage } from "./LazyLoadImage";
+export { AnimatedHeader } from "./AnimatedHeader";
 
 /* Models */
 export { Routes } from "./Model";

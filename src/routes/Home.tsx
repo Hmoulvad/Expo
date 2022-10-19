@@ -5,7 +5,7 @@ import { Spacing } from "../components/Spacing";
 import { useNav } from "../lib/useNavigation";
 import { Routes } from "./Model";
 
-export const HomeScreen = () => {
+export const Home = () => {
   const { navigate } = useNav();
   return (
     <Box>

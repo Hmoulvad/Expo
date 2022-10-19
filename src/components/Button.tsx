@@ -21,7 +21,7 @@ export const Button = ({ children, ...rest }: Props) => {
       alignContent: "center",
       alignItems: "center",
       backgroundColor: theme.colors.card,
-      borderRadius: AppSpacing[4],
+      borderRadius: AppSpacing[5],
     },
   });
 
