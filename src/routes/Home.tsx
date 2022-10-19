@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "../components/Box";
-import { Button } from "../components/Button";
+import { Button } from "../components/Button/Button";
 import { Spacing } from "../components/Spacing";
 import { useNav } from "../lib/useNavigation";
 import { Routes } from "./Model";
@@ -9,12 +9,16 @@ export const Home = () => {
   const { navigate } = useNav();
   return (
     <Box>
-      <Button onPress={() => navigate(Routes.LazyLoadImage)}>
+      <Button outline onPress={() => navigate(Routes.LazyLoadImage)}>
         LazyLoadImage
       </Button>
       <Spacing />
-      <Button onPress={() => navigate(Routes.AnimatedHeader)}>
+      <Button outline onPress={() => navigate(Routes.AnimatedHeader)}>
         Animated Header
+      </Button>
+      <Spacing />
+      <Button outline onPress={() => navigate(Routes.AnimatedHero)}>
+        Animated Hero
       </Button>
     </Box>
   );

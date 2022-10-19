@@ -8,7 +8,7 @@ export const DefaultTheme: Theme = {
     background: Color1,
     card: Color2,
     text: Color6,
-    border: Color5,
+    border: Color6,
     notification: Color4,
   },
 };
