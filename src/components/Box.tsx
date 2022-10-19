@@ -5,19 +5,22 @@ import { AppSpacing } from "../constants/Tokens";
 type Props = {
   children: ReactNode;
   flexRow?: boolean;
+  withPadding?: boolean;
 } & ViewProps;
 
-export const Box = ({ children, flexRow, ...rest }: Props) => (
-  <View
-    style={[Styles.Container, { flexDirection: flexRow ? "row" : "column" }]}
-    {...rest}
-  >
-    {children}
-  </View>
-);
+export const Box = ({ children, flexRow, withPadding, ...rest }: Props) => {
+  const Styles = StyleSheet.create({
+    Container: {
+      padding: withPadding ? AppSpacing[4] : 0,
+    },
+  });
 
-const Styles = StyleSheet.create({
-  Container: {
-    padding: AppSpacing[4],
-  },
-});
+  return (
+    <View
+      style={[Styles.Container, { flexDirection: flexRow ? "row" : "column" }]}
+      {...rest}
+    >
+      {children}
+    </View>
+  );
+};

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "../components/Box";
 import { Button } from "../components/Button/Button";
-import { Spacing } from "../components/Spacing";
+import { Spacing } from "../components/Spacing/Spacing";
 import { useNav } from "../lib/useNavigation";
 import { Routes } from "./Model";
 
