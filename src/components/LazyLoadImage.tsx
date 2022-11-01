@@ -1,15 +1,21 @@
 import React from "react";
-import { Dimensions, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withTiming,
 } from "react-native-reanimated";
+import { Screen } from "../constants/Tokens";
 
-const ImageWidth = Dimensions.get("screen").width;
-const ImageHeight = Dimensions.get("screen").height;
+type Props = {
+  width?: number;
+  height?: number;
+};
 
-export const LazyLoadImage = () => {
+export const LazyLoadImage = ({
+  height = Screen.height,
+  width = Screen.width,
+}: Props) => {
   const opacity = useSharedValue(0);
 
   const imageFadeInStyle = useAnimatedStyle(() => ({
@@ -19,6 +25,18 @@ export const LazyLoadImage = () => {
   function onImageLoad() {
     opacity.value = withTiming(1, { duration: 200 });
   }
+
+  const Styles = StyleSheet.create({
+    Image: {
+      position: "absolute",
+      width: width,
+      height: height,
+    },
+    Container: {
+      width: width,
+      height: height,
+    },
+  });
 
   return (
     <View style={Styles.Container}>
@@ -40,15 +58,3 @@ export const LazyLoadImage = () => {
     </View>
   );
 };
-
-const Styles = StyleSheet.create({
-  Image: {
-    position: "absolute",
-    width: ImageWidth,
-    height: ImageHeight,
-  },
-  Container: {
-    width: ImageWidth,
-    height: ImageHeight,
-  },
-});

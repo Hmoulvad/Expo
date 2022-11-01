@@ -16,8 +16,7 @@ export const Button = ({ children, outline = false, ...rest }: Props) => {
   const Styles = StyleSheet.create({
     Button: {
       paddingVertical: AppSpacing[2],
-      flex: 1,
-      minHeight: AppSpacing[10],
+      height: AppSpacing[10],
       alignContent: "center",
       alignItems: "center",
       borderRadius: AppSpacing[5],

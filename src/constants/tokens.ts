@@ -1,3 +1,5 @@
+import { Dimensions } from "react-native";
+
 export const Color1 = "#31393C";
 export const Color2 = "#2176FF";
 export const Color3 = "#33A1FD";
@@ -57,3 +59,5 @@ export const FontSizes = {
     return 4 * 7;
   },
 };
+
+export const Screen = Dimensions.get("screen");

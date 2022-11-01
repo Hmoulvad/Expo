@@ -8,7 +8,7 @@ import { Routes } from "./Model";
 export const Home = () => {
   const { navigate } = useNav();
   return (
-    <Box>
+    <Box withPadding>
       <Button outline onPress={() => navigate(Routes.LazyLoadImage)}>
         LazyLoadImage
       </Button>
